@@ -1,0 +1,62 @@
+set encoding=utf-8
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set smarttab
+set autoindent
+set nowrap
+set smartcase
+set showmatch
+set title
+set ruler
+set et
+set relativenumber
+set incsearch
+set hlsearch
+set autoread
+set autowrite
+set nobackup
+set nowritebackup
+set noswapfile
+set nocompatible
+
+" allows buffers to be hidden if you modified a buffer
+set hidden
+filetype off
+syntax on
+
+let mapleader = "\<Space>"
+
+inoremap jj <esc>
+
+" use common Ctrl-L to 'clear' search
+nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+
+" opens a new empty buffer
+nmap <leader>n :enew<CR>
+" moves to the next buffer
+nmap <leader>l :bnext<CR>
+" moves to the previous buffer
+nmap <leader>h :bprevious<CR>
+" shows all open buffers
+nnoremap <leader>b :ls<CR>:b<Space>
+
+" closes the current buffer, moves to the previous one
+nmap <leader>w :bd<CR>
+
+" memove netrw banner
+let g:netrw_banner = 0
+
+" goes back to netrw view
+ nnoremap <leader>1 :E<CR>
+
+" Uses shift arrow keys to move lines up and down
+nnoremap <S-Up> :m-2<CR>
+nnoremap <S-Down> :m+<CR>
+inoremap <S-Up> <Esc>:m-2<CR>
+inoremap <S-Down> <Esc>:m+<CR>
+
+
+" H/V split: <CTRL + W> n and <CTRL + W> w
+
+
