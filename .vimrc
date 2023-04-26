@@ -16,7 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 set rtp+=/usr/local/opt/fzf
 Plugin 'junegunn/fzf.vim' " uses FZF for file searching
 Plugin 'maralla/completor.vim' " completion manager. For language support, configure as documented
-Plugin 'w0rp/ale' " async linter
+Plugi 'w0rp/ale' " async linter
 
 
 
